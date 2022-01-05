@@ -12,23 +12,21 @@ import com.vivo.push.sdk.OpenClientPushMessageReceiver;
  * @author wapchief
  * @date 2022/1/4
  */
-public class PushMessageReceiverImpl extends OpenClientPushMessageReceiver {
+public class VivoPushMessageReceiver extends OpenClientPushMessageReceiver {
     @Override
     public void onReceiveRegId(Context context, String s) {
-        Log.d("tanliang", " onReceiveRegId= " + s);
+        Log.d("vivo-tanliang", " onReceiveRegId= " + s);
     }
 
     @Override
     public void onTransmissionMessage(Context context, UnvarnishedMessage unvarnishedMessage) {
         super.onTransmissionMessage(context, unvarnishedMessage);
-        Toast.makeText(context, " 收到透传通知： " + unvarnishedMessage.getMessage(), Toast.LENGTH_LONG).show();
-        Log.d("OpenClientPushMessageReceiverImpl", " onTransmissionMessage= " + unvarnishedMessage.getMessage());
+        Log.d("vivo-OpenClientPush", " onTransmissionMessage= " + unvarnishedMessage.getMessage());
     }
 
     @Override
     public void onNotificationMessageClicked(Context context, UPSNotificationMessage unvarnishedMessage) {
         super.onNotificationMessageClicked(context, unvarnishedMessage);
-        Toast.makeText(context, " 收到通知点击回调： " + unvarnishedMessage.toString(), Toast.LENGTH_LONG).show();
-        Log.d("OpenClientPushMessageReceiverImpl", " onTransmissionMessage= " + unvarnishedMessage.toString());
+        Log.d("vivo-OpenClientPushMessageReceiverImpl", " onTransmissionMessage= " + unvarnishedMessage.toString());
     }
 }
