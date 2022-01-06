@@ -2,6 +2,9 @@
     package="com.wapchief.flutter_vivo_push_plugin">
 
     <application>
+        <meta-data
+            android:name="sdk_version_vivo"
+            android:value="484" />
         <service
             android:name="com.vivo.push.sdk.service.CommandClientService"
             android:permission="com.push.permission.UPSTAGESERVICE"
