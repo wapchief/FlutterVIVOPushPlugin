@@ -1,11 +1,11 @@
 name: flutter_vivo_push_plugin
 description: A new Flutter project.
-version: 0.0.1
+version: 0.0.2
 repository: https://github.com/wapchief/FlutterVIVOPushPlugin
 homepage: https://github.com/wapchief/FlutterVIVOPushPlugin
 environment:
   sdk: ">=2.15.1 <3.0.0"
-  flutter: ">=2.5.0"
+  flutter: ">=2.0.0"
 
 dependencies:
   flutter:
